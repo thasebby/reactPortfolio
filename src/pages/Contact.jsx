@@ -17,6 +17,7 @@ function Contact() {
         if (!validEmail) {
           // If email is invalid, display error message
           alert('Please provide a valid email address.');
+
           return; 
         }
 
@@ -43,31 +44,25 @@ function Contact() {
       };
 
       return(
-        <div> 
-            <h1>Any questions for me?</h1>
-
-            <form id="contactForm">
-                <div className="tooltip">
-                    <h2>Enter your name:</h2>
-                    <input className="form-control" id="guestName" type="text" value={guestName} placeholder="Guest Name" onChange = {(e) => setGuestName(e.target.value)}></input>
-                    <span className="tooltip tooltiptext">Enter your name</span>
-                </div>
-
-                <div className="tooltip">
-                    <h2>Enter your email:</h2>
-                    <input className="form-control" id="guestEmail" type="text" value={guestEmail} placeholder="Guest Email" onChange = {(e) => setGuestEmail(e.target.value)}></input>
-                    <span className="tooltip tooltiptext">Enter your email</span>
-                </div>
-
-                <div className="tooltip">
-                    <h2>Enter your message:</h2>
-                    <textarea className="form-control" id="guestMessage" type="text" value={guestMessage} placeholder="Guest Message" onChange = {(e) => setGuestMessage(e.target.value)}></textarea>
-                    <span className="tooltip tooltiptext">enter your message</span>
-                </div>
-
-                <button type="submit" onClick={handleSubmit} className="btn btn-primary">Submit</button>
-            </form>
-        </div>
+        <div className="container p-4">
+        <h1 className="text-white-emphasis text-center">Contact Me</h1>
+        <form id="contact-form" onSubmit={handleSubmit}>
+  
+          <div className="form-floating mb-3">
+            <input name="name" type="name" className="form-control bg-secondary" placeholder="Guest Name" value={guestName} onChange={(e) => setGuestName(e.target.value)}></input>
+            <label>Name</label>
+          </div>
+          <div className="form-floating mb-3 ">
+            <input name="email" type="email" className="form-control bg-secondary" placeholder="Guest Email" value={guestEmail} onChange={(e) => setGuestEmail(e.target.value)}></input>
+            <label>Email</label>
+          </div>
+          <div className="form-floating mb-3 ">
+            <textarea name="message" className="form-control bg-secondary" placeholder="Guest Message" value={guestMessage} onChange={(e) => setGuestMessage(e.target.value)}></textarea>
+            <label>Enter a message</label>
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
+      </div>
       );
 }
 

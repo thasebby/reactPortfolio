@@ -68,3 +68,13 @@
   visibility: visible;
   opacity: 1;
 }
+
+footer {
+  text-align: center; /* You can remove this line if you don't want the content of the footer to be centered */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Set the background color to ensure visibility */
+  color: white; /* Set the text color for better contrast */
+  padding: 20px; /* Add padding for spacing */
+}
