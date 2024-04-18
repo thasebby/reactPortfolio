@@ -86,36 +86,41 @@ export default function Resume() {
 
     return (
         <div className='row justify-content-center p-4'>
-            <h1 className='text-center col-3 pb-3 mb-4 border-bottom'>Sebastian Saenz's Resume</h1>
-            <button onClick={onButtonClick}>
-                Download my Resume!
-            </button>
+            <h1 className='text-center mb-3 border-bottom'>Sebastian Saenz's Resume</h1>
+            <div className='d-flex flex-wrap justify-content-center text-center'>
+                <div className='card d-grid gap-2'>
+                    <button className='btn btn-primary' onClick={onButtonClick}>
+                        Download my Resume!
+                    </button>
+                </div>
+            </div>
+
+            <h1 className='d-flex flex-wrap justify-content-center text-center'>Developer's Profeciencies</h1>
+
 
             <section className='d-flex flex-wrap justify-content-center text-center'>
-                <h1>Developer's Profeciencies</h1>
-
                 <>
-                    <div className='card'>
-                        <Button variant="primary" onClick={() => setModalShow(true)}>
+                    <div className='card d-grid gap-2'>
+                        <Button variant="primary" className='btn btn-primary' onClick={() => setModalShow(true)}>
                             Front-End Web Development
                         </Button>
 
                         <FrontEndModal
-                            show = {modalShow}
-                            onHide = {() => setModalShow(false)}
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
                         />
                     </div>
-                </> 
+                </>
 
                 <>
-                    <div className='card'>
-                        <Button variant="primary" onClick={() => setModalShow(true)}>
+                    <div className='card d-grid gap-2'>
+                        <Button variant="primary" className='btn btn-primary' onClick={() => setModalShow(true)}>
                             Back-End Web Development
                         </Button>
 
                         <BackEndModal
-                            show = {modalShow}
-                            onHide = {() => setModalShow(false)}
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
                         />
                     </div>
                 </>
