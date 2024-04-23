@@ -10,6 +10,7 @@ import taskPro from '../assets/images/taskPro.png'
 export default function Portfolio() {
     return (
         <div className='d-flex flex-wrap justify-content-center container'>
+            <h1 className='text-center mb-3 border-bottom'>Sebastian Saenz's Portfolio</h1>
 
             <div className='card text-center' aria-hidden="true">
                 <img src={sipAdvisor} className='card-img-top' alt='Sip Advisor'></img>
@@ -47,7 +48,7 @@ export default function Portfolio() {
                         Planorama
                     </h2>
                     <p className='card-text'>
-                        Planorama allows the users to create events and share them with their coworkers. There is also a 
+                        Planorama allows the users to create events and share them with their coworkers. There is also a
                         calendar feature in which the user can see all upcoming events.
                     </p>
                     <a href='https://github.com/nathan26036/Planorama.git' className='card-link btn btn-primary'>GitHub Link</a>
