@@ -78,7 +78,7 @@ export default function Resume() {
         const pdfUrl = resume;
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.download = 'SebastianSaenzResume.pdf';
+        link.download = 'SebastianSaenz2024Resume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
