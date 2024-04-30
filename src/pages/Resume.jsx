@@ -1,4 +1,4 @@
-import resume from '../assets/SebastianSaenzUpdated2024.pdf'
+import resume from '../assets/sebastianSaenzUpdated2024.pdf'
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
