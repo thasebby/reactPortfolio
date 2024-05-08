@@ -185,11 +185,14 @@ body {
   animation-delay:4.5s;
 }
 
-
-
 @keyframes fade {
   from { background: #096AE0; }
   to { background: #3209E0; }
+}
+
+/* nav link text color */
+.nav-color {
+  color:white;
 }
 
 
