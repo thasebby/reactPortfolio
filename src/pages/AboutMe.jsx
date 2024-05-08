@@ -1,28 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import avatar from '../assets/images/avatar.png'
+import '../App.css';
 
 export default function AboutMe() {
 
     return (
         <div>
-            <div className='row justify-content-center'>
-                <h1 className='text-center border-bottom'>About Page</h1>
+            <div className='align-items-center d-flex justify-content-center vh-100'>
+                <div className='text-center'>
+                    <h1 className='slide-in-blurred-top jaro-title' style={{ fontSize: '4rem'}} >What's Up! My name is Sebastian Saenz</h1>
+                    <p className='slide-in-blurred-top jaro-title' style={{ animationDelay: '0.5s', fontSize:'1rem' }}>
+                        After 8 long years in hospitality, I am attempting to make a career change into the tech field.
+                        Take a peruse to learn a little more about me.
+
+
+                    </p>
+                </div>
             </div>
 
-            <div className='d-flex justify-content-center'>
-                {/* recent avatar */}
-                <img src={avatar} className="rounded-circle" height="200" width="200" alt="Sebastian avatar"></img>
-            </div>
 
-            <div>
-                {/* short bio */}
-                <p className='text-center'>
-                    Welcome to my Portfolio! My name's Sebastian Saenz. I have been in the hospitality industry for 8 years, moving from cooking in
-                    the back to my current bartending career. I've worked at sports bars, speakeasies and jazz bars and have experienced everything in between.
-                    I've recently embarked on this 6 month journey to change career fields and am proud to say that I've made it!
+            {/* <div className='d-flex justify-content-center'> */}
+            {/* recent avatar */}
+            {/* <img src={avatar} className="rounded-circle" height="200" width="200" alt="Sebastian avatar"></img>
+            </div> */}
 
-                </p>
-            </div>
         </div>
     );
 }
