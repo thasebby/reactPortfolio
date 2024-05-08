@@ -135,8 +135,6 @@
 }
 
 /* background css */
-@import "compass/css3";
-
 .background-container {
   position: fixed;
   top: 0;
