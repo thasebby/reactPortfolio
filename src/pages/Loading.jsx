@@ -1,5 +1,5 @@
 import React from 'react';
-import '../LoadingRing.css';
+// import '../LoadingRing.css';
 
 function Loading() {
   return (
