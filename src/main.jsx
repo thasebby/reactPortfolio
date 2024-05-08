@@ -10,6 +10,7 @@ import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Loading from './pages/Loading';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
+      {
+        path:'/Loading',
+        element: <Loading />,
+      },
       {
         index: true,
         element: <AboutMe />,
