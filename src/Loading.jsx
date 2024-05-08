@@ -5,7 +5,7 @@ import './LoadingRing.css';
 function Loading() {
   return (
     <div className='ring'>
-        <h1 className='centered-text'>Sebastian Saenz's Profile</h1>
+        <h1 className='centered-text'>Sebastian Saenz's Portfolio</h1>
         <span></span>
     </div>
   );
