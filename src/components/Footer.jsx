@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 function Footer() {
   return (
     <footer>
-      <ul className="footer nav-underline p-3 fs-1 gap-4 justify-content-center">
+      <ul className="footer p-3 fs-1 gap-4 justify-content-center list-inline d-flex">
         <li className="nav-item">
           <a href="https://github.com/thasebby" className="nav-link">
             <i className="fab fa-github"></i>
