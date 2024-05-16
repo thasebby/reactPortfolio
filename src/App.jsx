@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Nav from './components/NavTabs.jsx';
 import Footer from './components/Footer.jsx';
-import Loading from './Loading.jsx'; // Import the Loading component
+import Loading from './Loading.jsx';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
