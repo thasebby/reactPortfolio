@@ -24,8 +24,14 @@ export default function Portfolio() {
 
                     <img src={sipAdvisor} className='card-img-top' alt='Sip Advisor'></img>
 
-                    <a href='https://github.com/cweinstein36/SipAdvisor_API-Project.git' className='card-link btn btn-primary'>GitHub Link</a>
-                    <a href='https://cweinstein36.github.io/SipAdvisor_API-Project/' className='card-link btn btn-primary'>Website Link</a>
+                    <div className='mt-3'>
+                        <div className='col'>
+                            <a href='https://github.com/cweinstein36/SipAdvisor_API-Project.git' className='card-link btn btn-primary mt-3 d-block'>GitHub Link</a>
+                        </div>
+                        <div className='col'>
+                            <a href='https://cweinstein36.github.io/SipAdvisor_API-Project/' className='card-link btn btn-primary mt-3 d-block'>Website Link</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -42,8 +48,14 @@ export default function Portfolio() {
 
                     <img src={taskPro} className='card-img-top' alt='TaskPro'></img>
 
-                    <a href='https://github.com/JMcKenna01/TaskPro.git' className='card-link btn btn-primary'>GitHub Link</a>
-                    <a href='https://taskpro-team1-96df893b3174.herokuapp.com/' className='card-link btn btn-primary'>Website Link</a>
+                    <div className='mt-3'>
+                        <div className='col'>
+                        <a href='https://github.com/JMcKenna01/TaskPro.git' className='card-link btn btn-primary mt-3 d-block'>GitHub Link</a>
+                        </div>
+                        <div className='col'>
+                        <a href='https://taskpro-team1-96df893b3174.herokuapp.com/' className='card-link btn btn-primary mt-3 d-block'>Website Link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -59,8 +71,14 @@ export default function Portfolio() {
 
                     <img src={planorama} className='card-img-top' alt='Planorama'></img>
 
-                    <a href='https://github.com/nathan26036/Planorama.git' className='card-link btn btn-primary'>GitHub Link</a>
-                    <a href='https://planorama.onrender.com/' className='card-link btn btn-primary'>Website Link</a>
+                    <div className='mt-3'>
+                        <div className='col'>
+                        <a href='https://github.com/nathan26036/Planorama.git' className='card-link btn btn-primary mt-3 d-block'>GitHub Link</a>
+                        </div>
+                        <div className='col'>
+                        <a href='https://planorama.onrender.com/' className='card-link btn btn-primary mt-3 d-block'>Website Link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -76,9 +94,17 @@ export default function Portfolio() {
 
                     <img src={noSQL} className='card-img-top' alt='noSQL Social Network'></img>
 
-                    <a href='https://github.com/thasebby/noSQLsocialNetwork.git' className='card-link btn btn-primary'>GitHub Link</a>
-                    <a href='https://www.youtube.com/watch?v=dIu0KvuiCqw' className='card-link btn btn-primary'>Website Link to User Routes</a>
-                    <a href='https://www.youtube.com/watch?v=7FtS8YR2CJE' className='card-link btn btn-primary'>Website Link to Thought Routes</a>
+                    <div className='mt-3'>
+                        <div className='col'>
+                        <a href='https://github.com/thasebby/noSQLsocialNetwork.git' className='card-link btn btn-primary mt-3 d-block'>GitHub Link</a>
+                        </div>
+                        <div className='col'>
+                        <a href='https://www.youtube.com/watch?v=dIu0KvuiCqw' className='card-link btn btn-primary mt-3 d-block'>Website Link to User Routes</a>
+                        </div>
+                        <div className='col'>
+                        <a href='https://www.youtube.com/watch?v=7FtS8YR2CJE' className='card-link btn btn-primary mt-3 d-block'>Website Link to Thought Routes</a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -94,8 +120,14 @@ export default function Portfolio() {
 
                     <img src={noteTaker} className='card-img-top' alt='Note Taker'></img>
 
-                    <a href='https://github.com/thasebby/noteTaker.git' className='card-link btn btn-primary'>GitHub Link</a>
-                    <a href='https://hidden-harbor-51856-60d1c10ef951.herokuapp.com/' className='card-link btn btn-primary'>Website Link</a>
+                    <div className='mt-3'>
+                        <div className='col'>
+                        <a href='https://github.com/thasebby/noteTaker.git' className='card-link btn btn-primary mt-3 d-block'>GitHub Link</a>
+                        </div>
+                        <div className='col'>
+                        <a href='https://hidden-harbor-51856-60d1c10ef951.herokuapp.com/' className='card-link btn btn-primary mt-3 d-block'>Website Link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -111,8 +143,14 @@ export default function Portfolio() {
 
                     <img src={employeeTracker} className='card-img-top' alt='Employee Tracker'></img>
 
-                    <a href='https://github.com/thasebby/employeeTracker.git' className='card-link btn btn-primary'>GitHub Link</a>
-                    <a href='#' className='card-link btn btn-primary'>Website Link</a>
+                    <div className='mt-3'>
+                        <div className='col'>
+                        <a href='https://github.com/thasebby/employeeTracker.git' className='card-link btn btn-primary mt-3 d-block'>GitHub Link</a>
+                        </div>
+                        <div className='col'>
+                        <a href='#' className='card-link btn btn-primary mt-3 d-block'>Website Link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
