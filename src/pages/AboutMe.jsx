@@ -6,7 +6,7 @@ export default function AboutMe() {
 
     return (
         <div>
-            <div className='align-items-center d-flex justify-content-center vh-100'>
+            <div className='align-items-center d-flex justify-content-center'>
                 <div className='text-center'>
                     <h1 className='slide-in-blurred-top jaro-title' style={{ fontSize: '4rem'}} >What's Up! My name is Sebastian Saenz</h1>
                     <p className='slide-in-blurred-top jaro-title' style={{ animationDelay: '0.5s', fontSize:'1rem' }}>
