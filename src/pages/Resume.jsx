@@ -85,8 +85,8 @@ export default function Resume() {
     };
 
     return (
-        <div className='row justify-content-center p-4'>
-            <h1 className='text-center mb-3 border-bottom'>Sebastian Saenz's Resume</h1>
+        <div className='d-flex flex-wrap justify-content-center container p-4 gap-5'>
+            {/* <h1 className='text-center mb-3'>Sebastian Saenz's Resume</h1> */}
             <div className='d-flex flex-wrap justify-content-center text-center'>
                 <div className='card d-grid gap-2'>
                     <button className='btn btn-primary' onClick={onButtonClick}>
