@@ -1,4 +1,4 @@
-import resume from '../assets/sebastianSaenzUpdated2024.pdf'
+import resume from '../assets/SebastianSaenzResume2024v3.pdf'
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -85,22 +85,22 @@ export default function Resume() {
     };
 
     return (
-        <div className='d-flex flex-wrap justify-content-center container p-4 gap-5'>
+        <div className='container p-4'>
             {/* <h1 className='text-center mb-3'>Sebastian Saenz's Resume</h1> */}
-            <div className='d-flex flex-wrap justify-content-center text-center'>
-                <div className='card d-grid gap-2'>
+            <div className='d-flex flex-column align-items-center'>
+                <div className='mb-4'>
                     <button className='btn btn-primary' onClick={onButtonClick}>
                         Download my Resume!
                     </button>
                 </div>
             </div>
-
-            <h1 className='d-flex flex-wrap justify-content-center text-center'>Developer's Profeciencies</h1>
+            
+            <h1 className='text-center mb-4'>Developer's Profeciencies</h1>
 
 
             <section className='d-flex flex-wrap justify-content-center text-center'>
                 <>
-                    <div className='card d-grid gap-2'>
+                    <div className='card d-grid gap-2 m-2'>
                         <Button variant="primary" className='btn btn-primary' onClick={() => setModalShow(true)}>
                             Front-End Web Development
                         </Button>
@@ -113,7 +113,7 @@ export default function Resume() {
                 </>
 
                 <>
-                    <div className='card d-grid gap-2'>
+                    <div className='card d-grid gap-2 m-2'>
                         <Button variant="primary" className='btn btn-primary' onClick={() => setModalShow(true)}>
                             Back-End Web Development
                         </Button>
