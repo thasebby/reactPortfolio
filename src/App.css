@@ -147,7 +147,9 @@
 body {
   margin: 0;
 }
-.row {
+
+/* this is the shimmer effect, took it of to try a new web setup */
+/* .row {
   background: #096AE0;
   height: 10vh;
   width: 100%;
@@ -183,16 +185,51 @@ body {
 }
 .row-10 {
   animation-delay:4.5s;
-}
-
+} */
+/* 
 @keyframes fade {
   from { background: #096AE0; }
   to { background: #3209E0; }
-}
+} */
 
 /* nav link text color */
 .nav-color {
   color:white;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-link {
+  margin-right: auto;
+}
+
+.other-links {
+  margin-left: auto;
+}
+
+.nav-tabs {
+  display: flex;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-color {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link {
+  padding: 10px;
+}
+
+.nav-link.active {
+  font-weight: bold;
 }
 
 

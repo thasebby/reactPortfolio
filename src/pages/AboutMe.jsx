@@ -8,8 +8,14 @@ export default function AboutMe() {
         <div>
             <div className='align-items-center d-flex justify-content-center'>
                 <div className='text-center'>
-                    <h1 className='slide-in-blurred-top jaro-title' style={{ fontSize: '4rem'}} >What's Up! My name is Sebastian Saenz</h1>
-                    <p className='slide-in-blurred-top jaro-title' style={{ animationDelay: '0.5s', fontSize:'1rem' }}>
+
+
+                    <div className='d-flex justify-content-center'>
+                    <img src={avatar} className="rounded-circle" height="200" width="200" alt="Sebastian avatar"></img>
+                    </div>
+                    
+                    <h1 className='slide-in-blurred-top jaro-title' style={{ fontSize: '4rem' }} >What's Up! My name is Sebastian Saenz</h1>
+                    <p className='slide-in-blurred-top jaro-title' style={{ animationDelay: '0.5s', fontSize: '1rem' }}>
                         After 8 long years in hospitality, I am attempting to make a career change into the tech field.
                         Take a peruse to learn a little more about me.
 
