@@ -8,7 +8,7 @@ function NavTabs() {
 
   return (
     <nav className='nav-container'>
-      <ul className="nav nav-tabs home-link jaro-title" style={{ borderBottom: '0px' }}>
+      <ul className="nav nav-tabs home-link poppins-extrabold" style={{ borderBottom: '0px' }}>
         <li className="nav-item">
           <Link
             to="/"
@@ -21,7 +21,7 @@ function NavTabs() {
         </li>
       </ul>
 
-      <ul className='nav nav-tabs other-links jaro-title' style={{ borderBottom: '0px' }}>
+      <ul className='nav nav-tabs other-links poppins-extrabold' style={{ borderBottom: '0px' }}>
         <li className="nav-item">
           <Link
             to="/Portfolio"

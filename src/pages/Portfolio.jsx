@@ -13,10 +13,10 @@ export default function Portfolio() {
 
             <div className='card text-center p-2 col-lg-3 col-sm-10 col-xxs-10' aria-hidden="true">
                 <div className='card-body'>
-                    <h2 className='card-title jaro-title text-decoration-underline'>
+                    <h2 className='card-title poppins-extrabold text-decoration-underline'>
                         sipAdvisor
                     </h2>
-                    <p className='card-text jaro-title'>
+                    <p className='card-text poppins-light'>
                         This application will allow users to look up drinks and will provide the recipe to make it
                         with the use of an API. For the future we plan on implementing a map API that will allow the user to find
                         the closest liquor store.
@@ -38,10 +38,10 @@ export default function Portfolio() {
 
             <div className='card text-center p-2 col-lg-3 col-sm-10 col-xs-10 col-xxs-10' aria-hidden="true">
                 <div className='card-body'>
-                    <h2 className='card-title jaro-title text-decoration-underline'>
+                    <h2 className='card-title poppins-extrabold text-decoration-underline'>
                         TaskPro
                     </h2>
-                    <p className='card-text jaro-title'>
+                    <p className='card-text poppins-light'>
                         With TaskPro a user can signup as a employee,supervisor and manager. Depending on what they
                         sign up as they will have access to different duties within the application.
                     </p>
@@ -61,10 +61,10 @@ export default function Portfolio() {
 
             <div className='card text-center p-2 col-lg-3 col-sm-10 col-xs-10 col-xxs-10' aria-hidden="true">
                 <div className='card-body'>
-                    <h2 className='card-title jaro-title text-decoration-underline'>
+                    <h2 className='card-title poppins-extrabold text-decoration-underline'>
                         Planorama
                     </h2>
-                    <p className='card-text jaro-title'>
+                    <p className='card-text poppins-light'>
                         Planorama allows the users to create events and share them with their coworkers. There is also a
                         calendar feature in which the user can see all upcoming events.
                     </p>
@@ -84,10 +84,10 @@ export default function Portfolio() {
 
             <div className='card text-center p-2 col-lg-3 col-sm-10 col-xs-10 col-xxs-10' aria-hidden="true">
                 <div className='card-body'>
-                    <h2 className='card-title jaro-title text-decoration-underline'>
+                    <h2 className='card-title poppins-extrabold text-decoration-underline'>
                         noSQL Social Network
                     </h2>
-                    <p className='card-text jaro-title'>
+                    <p className='card-text poppins-light'>
                         This is the backend to Social Newtork where a user can add friends and remove friends. This project was
                         created without using mySQL.
                     </p>
@@ -111,10 +111,10 @@ export default function Portfolio() {
 
             <div className='card text-center p-2 col-lg-3 col-sm-10 col-xs-10 col-xxs-10' aria-hidden="true">
                 <div className='card-body'>
-                    <h2 className='card-title jaro-title text-decoration-underline'>
+                    <h2 className='card-title poppins-extrabold text-decoration-underline'>
                         Note Taker
                     </h2>
-                    <p className='card-text jaro-title'>
+                    <p className='card-text poppins-light'>
                         This is a simple note taking application that allows the user to create a note with a title.
                     </p>
 
@@ -133,10 +133,10 @@ export default function Portfolio() {
 
             <div className='card text-center p-2 col-lg-3 col-sm-10 col-xs-10 col-xxs-10' aria-hidden="true">
                 <div className='card-body'>
-                    <h2 className='card-title jaro-title text-decoration-underline'>
+                    <h2 className='card-title poppins-extrabold text-decoration-underline'>
                         Employee Tracker
                     </h2>
-                    <p className='card-text jaro-title'>
+                    <p className='card-text poppins-light'>
                         This Employee Tracker uses mySQL to create a database with different departments, roles and employee names.
                         The user can create an employee, role and a department while modifying all aspects of each.
                     </p>

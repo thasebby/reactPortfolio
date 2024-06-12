@@ -126,11 +126,22 @@
   }
 }
 
-/* font for home page */
-.jaro-title {
-  font-family: "Jaro", sans-serif;
-  font-optical-sizing: auto;
+/* font for web*/
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
 
