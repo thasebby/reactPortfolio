@@ -13,7 +13,7 @@ function FrontEndModal(props) {
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
-            <Modal.Header className='bg-dark' closeButton>
+            <Modal.Header className='bg-dark'>
                 <Modal.Title className="text-light" id='contained-modal-title-vcenter'>
                     Front-End Proficiencies
                 </Modal.Title>
@@ -46,7 +46,7 @@ function BackEndModal(props) {
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
-            <Modal.Header className='bg-dark' closeButton>
+            <Modal.Header className='bg-dark'>
                 <Modal.Title className="text-light" id='contained-modal-title-vcenter'>
                     Back-End Proficiencies
                 </Modal.Title>
@@ -87,21 +87,21 @@ export default function Resume() {
     return (
         <div className='container p-4'>
             {/* <h1 className='text-center mb-3'>Sebastian Saenz's Resume</h1> */}
+            <h1 className='text-center mb-4 poppins-extrabold'>Developer's Profeciencies</h1>
+            
             <div className='d-flex flex-column align-items-center'>
                 <div className='mb-4'>
-                    <button className='btn btn-primary' onClick={onButtonClick}>
+                    <button className='btn btn-primary poppins-regular' onClick={onButtonClick}>
                         Download my Resume!
                     </button>
                 </div>
             </div>
             
-            <h1 className='text-center mb-4'>Developer's Profeciencies</h1>
-
 
             <section className='d-flex flex-wrap justify-content-center text-center'>
                 <>
                     <div className='card d-grid gap-2 m-2'>
-                        <Button variant="primary" className='btn btn-primary' onClick={() => setModalShow(true)}>
+                        <Button variant="primary" className='btn btn-primary poppins-regular' onClick={() => setModalShow(true)}>
                             Front-End Web Development
                         </Button>
 
@@ -114,7 +114,7 @@ export default function Resume() {
 
                 <>
                     <div className='card d-grid gap-2 m-2'>
-                        <Button variant="primary" className='btn btn-primary' onClick={() => setModalShow(true)}>
+                        <Button variant="primary" className='btn btn-primary poppins-regular' onClick={() => setModalShow(true)}>
                             Back-End Web Development
                         </Button>
 
