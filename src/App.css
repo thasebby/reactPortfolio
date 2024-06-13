@@ -235,6 +235,7 @@ body {
   color: inherit;
 }
 
+/* from here down, the effects for the nav links are applied */
 .nav-link {
   padding:10px;
   position: relative;
@@ -264,6 +265,11 @@ body {
   transform-origin: bottom left;
 }
 
+.nav-link:hover {
+  color: white;
+}
+
+/* from here down the effects for the footer item are applied */
 .footer-item {
   transition: transform 0.3s ease-in-out;
 }
@@ -281,5 +287,7 @@ body {
   color: white;
   transform: scale(1.2);
 }
+
+ 
 
 
