@@ -288,6 +288,17 @@ body {
   transform: scale(1.2);
 }
 
+/* bio card effects */
+.bio-card {
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px white;
+  padding: 2rem;
+  overflow: hidden; 
+}
+
+
+
  
 
 
