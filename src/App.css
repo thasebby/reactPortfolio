@@ -222,6 +222,22 @@ body {
   margin-left: auto;
 }
 
+/* adjusting the other-links to show different  */
+@media (max-width: 768px) {
+  .other-links {
+    display: block;
+  }
+
+  .other-links li {
+    display: block;
+  }
+
+  .other-links li a {
+    display: block;
+    padding: 10px;
+  }
+}
+
 .nav-tabs {
   display: flex;
 }
