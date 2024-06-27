@@ -1,10 +1,16 @@
 import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
 import '../App.css';
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs() {
   const currentPage = useLocation().pathname;
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setShowDropdown(!showDropdown);
+  };
 
   return (
     <nav className='nav-container'>
@@ -21,7 +27,11 @@ function NavTabs() {
         </li>
       </ul>
 
-      <ul className='nav other-links poppins-extrabold' style={{ borderBottom: '0px' }}>
+      <div className='dropdown-toggle' onClick={handleDropdownToggle}>
+        Other Links
+      </div>
+
+      <ul className={`nav other-links poppins-extrabold ${showDropdown ? 'show' : ''}`}>
         <li className="nav-item">
           <Link
             to="/Portfolio"
