@@ -1,108 +1,39 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers.js';
-import emailjs from 'emailjs-com';
+import '@fortawesome/fontawesome-free/css/all.css'
+
 
 function Contact() {
 
   // create the useState variables
-  const [guestName, setGuestName] = useState('');
-  const [guestEmail, setGuestEmail] = useState('');
-  const [guestMessage, setGuestMessage] = useState('');
   const [success, setSuccess] = useState(false);
 
   function handleSubmit(event) {
     event.preventDefault();
 
-    // Validate email format
-    const validEmail = validateEmail(guestEmail);
+    const guestEmail = 'sebastian.saenz1203@gmail.com';
+    const subject = 'Contact Request';
+    const message = 'I would like to get in touch with you.';
 
-    if (!validEmail) {
-      // If email is invalid, display error message
-      alert('Please provide a valid email address.');
+    const mailtoLink = `mailto:${guestEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    window.location.href = mailtoLink;
 
-      return;
-    }
-
-    // check if any of the fields are empty
-    if (!guestName || !guestEmail || !guestMessage) {
-      alert('Please fill in all fields.');
-      return;
-    }
-
-
-    // If email is valid, proceed with gathering information
-    const formData = {
-      name: guestName,
-      email: guestEmail,
-      message: guestMessage,
-    };
-
-    emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      formData,
-      process.env.REACT_APP_EMAILJS_USER_ID
-      
-      )
-      .then(response => {
-        setSuccess(true);
-        guestName('');
-        guestEmail('');
-        guestMessage('');
-        console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch(error => {
-        console.error('Failed to send message:', error);
-        alert('There was an issue sending your message. Please try again.');
-      });
-
-    // sending to backend, can be used for further processing
-    console.log(formData);
-
+    setSuccess(true);
   };
 
   return (
     <div className="container p-4">
       <h1 className="text-white-emphasis text-center">Contact Me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
 
-        <div className="form-floating mb-3">
-          <input
-            name="name"
-            type="name"
-            className="form-control bg-secondary"
-            placeholder="Guest Name"
-            value={guestName} onChange={(e) => setGuestName(e.target.value)}
-            required
-          ></input>
-          <label>Name</label>
-        </div>
+      <ul className="footer p-3 fs-1 gap-4 justify-content-center list-inline d-flex">
+        <li className='nav-item footer-item'>
+          <a href="#" onClick={handleSubmit}>
+            <i className='fas fa-envelope footer-link'></i>
+          </a>
+        </li>
+      </ul>
 
-        <div className="form-floating mb-3 ">
-          <input
-            name="email"
-            type="email"
-            className="form-control bg-secondary"
-            placeholder="Guest Email" value={guestEmail} onChange={(e) => setGuestEmail(e.target.value)}
-            required>
-          </input>
-          <label>Email</label>
-        </div>
-
-        <div className="form-floating mb-3 ">
-          <textarea
-            name="message"
-            className="form-control bg-secondary"
-            placeholder="Guest Message"
-            value={guestMessage} onChange={(e) => setGuestMessage(e.target.value)}
-            required>
-          </textarea>
-          <label>Enter a message</label>
-        </div>
-
-        <button type="submit" className="btn btn-primary">Submit</button>
-      </form>
-      {success && <p>Thank you! Your message has been sent.</p>}
+      {success && <p>Opened an external email service!</p>}
     </div>
   );
 };
