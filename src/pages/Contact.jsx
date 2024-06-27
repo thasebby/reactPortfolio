@@ -10,8 +10,8 @@ function Contact() {
   const [guestMessage, setGuestMessage] = useState('');
   const [success, setSuccess] = useState(false);
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  function handleSubmit(event) {
+    event.preventDefault();
 
     // Validate email format
     const validEmail = validateEmail(guestEmail);
@@ -29,6 +29,7 @@ function Contact() {
       return;
     }
 
+
     // If email is valid, proceed with gathering information
     const formData = {
       name: guestName,
@@ -37,16 +38,18 @@ function Contact() {
     };
 
     emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      service_5fqj7sj,
+      template_ruzdp59,
       formData,
-      process.env.REACT_APP_EMAILJS_USER_ID
+      ml7YHLWz9R25dXneX
+      
       )
       .then(response => {
         setSuccess(true);
         guestName('');
         guestEmail('');
         guestMessage('');
+        console.log('SUCCESS!', response.status, response.text);
       })
       .catch(error => {
         console.error('Failed to send message:', error);
@@ -56,10 +59,6 @@ function Contact() {
     // sending to backend, can be used for further processing
     console.log(formData);
 
-    // clear the fields
-    setGuestName('');
-    setGuestEmail('');
-    setGuestMessage('');
   };
 
   return (
