@@ -38,10 +38,10 @@ function Contact() {
     };
 
     emailjs.send(
-      service_5fqj7sj,
-      template_ruzdp59,
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       formData,
-      ml7YHLWz9R25dXneX
+      process.env.REACT_APP_EMAILJS_USER_ID
       
       )
       .then(response => {
