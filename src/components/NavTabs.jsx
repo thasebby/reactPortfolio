@@ -27,9 +27,9 @@ function NavTabs() {
         </li>
       </ul>
 
-      <div className='dropdown-toggle' onClick={handleDropdownToggle}>
+      {/* <div className='dropdown-toggle' onClick={handleDropdownToggle}>
         Other Links
-      </div>
+      </div> */}
 
       <ul className={`nav other-links poppins-extrabold ${showDropdown ? 'show' : ''}`}>
         <li className="nav-item">
